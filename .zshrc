@@ -178,6 +178,39 @@ alias mkdir='mkdir -pv'
 # Quick edit
 alias hosts='sudo zed /etc/hosts'
 alias gitconfig='zed ~/.gitconfig'
+
+# YouTube video downloader
+# brew install ffmpeg
+# brew install yt-dlp
+alias youtube='noglob yt-dlp \
+  -f "bestvideo+bestaudio" \
+  --merge-output-format mp4 \
+  --output "$HOME/Downloads/youtube/%(title)s-%(id)s.%(ext)s" \
+  --embed-thumbnail \
+  --add-metadata \
+  --concurrent-fragments 16 \
+  --ignore-errors \
+  --cookies-from-browser firefox'
+
+alias youtube-720='yt-dlp \
+  -f "bestvideo[height<=720]+bestaudio/best[height<=720]" \
+  --merge-output-format mp4 \
+  --output "$HOME/Downloads/youtube/%(title)s-%(id)s.%(ext)s" \
+  --embed-thumbnail \
+  --add-metadata \
+  --concurrent-fragments 16 \
+  --ignore-errors \
+  --cookies-from-browser firefox'
+
+alias youtube-audio='yt-dlp \
+  -f "bestaudio[ext=m4a]/bestaudio" \
+  --output "$HOME/Downloads/youtube/%(title)s-%(id)s.%(ext)s" \
+  --embed-thumbnail \
+  --add-metadata \
+  --concurrent-fragments 16 \
+  --ignore-errors \
+  --cookies-from-browser firefox'
+
 ############################################ Aliases end
 
 brewall() {
