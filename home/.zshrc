@@ -219,24 +219,33 @@ brewall() {
   echo "=============================="
 
   echo ""
-  echo "[1/4] 🌍 Updating Homebrew..."
+  echo "[1/6] 🌍 Updating Homebrew..."
   brew update || { echo "[FAIL] brew update failed at $(date)"; return 1; }
   echo "[OK] Homebrew updated"
 
   echo ""
-  echo "[2/4] ⬆️ Upgrading installed formulae and casks..."
+  echo "[2/6] ⬆️ Upgrading installed formulae and casks..."
   brew upgrade || { echo "[FAIL] brew upgrade failed at $(date)"; return 1; }
   echo "[OK] Upgrades completed"
 
   echo ""
-  echo "[3/4] 🧹 Cleaning old cache and stale files..."
+  echo "[3/6] 🧹 Cleaning old cache and stale files..."
   brew cleanup --prune=all || { echo "[FAIL] brew cleanup failed at $(date)"; return 1; }
   echo "[OK] Cleanup completed"
 
   echo ""
-  echo "[4/4] 🗑️ Removing unused dependencies..."
+  echo "[4/6] 🗑️ Removing unused dependencies..."
   brew autoremove || { echo "[FAIL] brew autoremove failed at $(date)"; return 1; }
   echo "[OK] Autoremove completed"
+
+  echo ""
+  echo "[5/6] 💾 Syncing Brewfile..."
+  brew bundle dump --force || { echo "[FAIL] brew bundle dump failed at $(date)"; return 1; }
+  echo "[OK] Brewfile updated"
+
+  echo ""
+  echo "[6/6] 🩺 Running diagnostics..."
+  brew doctor || echo "[WARN] brew doctor reported issues (see above)"
 
   echo ""
   echo "=============================="
