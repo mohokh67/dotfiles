@@ -14,6 +14,8 @@ config.initial_rows = 28
 config.font_size = 15
 config.line_height = 1.2
 
+-- config.color_scheme = 'catppuccin-latte'
+-- config.color_scheme = 'catppuccin-Mocha'
 config.color_scheme = 'catppuccin-frappe'
 -- config.color_scheme = 'catppuccin-macchiato'
 

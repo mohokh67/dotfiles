@@ -1,5 +1,5 @@
 ---
-name: slack-cross-team-communication
+name: ignis-slack-cross-team-communication
 description: "Generate Slack messages for cross-team announcements. Use when: announcing migrations, deprecations, breaking changes, security updates, decommissioning, or any action-required communication to other teams. Triggers on 'announce to teams', 'migration message', 'deprecation notice', 'breaking change alert', 'cross-team update', 'notify other teams'."
 ---
 
