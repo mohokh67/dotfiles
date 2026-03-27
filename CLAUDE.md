@@ -9,7 +9,7 @@ Personal dotfiles repo managed with GNU Stow. No build, lint, or test commands â
 ## Stow setup
 
 ```sh
-stow -d ~/dev/dotfiles -t ~ home
+stow home
 ```
 
 Stow-managed files live in `home/`. To add a new file: place it under `home/` mirroring its `~` path, re-run stow.
