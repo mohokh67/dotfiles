@@ -1,5 +1,6 @@
 # PATH exports (set early before tool initialization)
 export PATH="$HOME/.npm-global/bin:$PATH"
+export EDITOR="zed"
 
 # Oh My Zsh configuration
 export ZSH="$HOME/.oh-my-zsh"
@@ -69,6 +70,14 @@ export FZF_CTRL_T_OPTS="--preview 'bat --color=always --style=numbers --line-ran
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 
 ########################################### caeapace
 autoload -U compinit && compinit
