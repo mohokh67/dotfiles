@@ -26,14 +26,14 @@ config.colors = {
     cursor_bg = '#7aa2f7',
     cursor_border = '#7aa2f7',
     -- This sets the color of the divider lines between split panes
-    split = '#FFED29', -- Change this to any hex color you like (e.g., Magenta)
+    split = '#7aa2f7', -- Change this to any hex color you like (e.g., Magenta)
 }
 
 
 -- Optional: Make the inactive panes slightly dimmer to help the active one stand out
 config.inactive_pane_hsb = {
-    saturation = 0.5,
-    brightness = 0.3,
+    saturation = 1,
+    brightness = 0.7,
 }
 
 config.window_padding = {
