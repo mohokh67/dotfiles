@@ -200,7 +200,9 @@ alias weather="curl wttr.in"
 
 # File operations (safe mode)
 alias cp='cp -iv'
+alias copy='rsync -ah --progress --ignore-errors --log-file=rsync.log'
 alias mv='mv -iv'
+alias move='rsync -ah --progress --ignore-errors --log-file=rsync.log --remove-source-files'
 alias mkdir='mkdir -pv'
 
 # Quick edit
@@ -280,5 +282,8 @@ brewall() {
   echo "Homebrew maintenance finished: $(date)"
   echo "=============================="
 }
+
+# Disable zoxide doctor warnings
+export _ZO_DOCTOR=0
 
 eval "$(zoxide init --cmd cd zsh)"
