@@ -32,8 +32,8 @@ config.colors = {
 
 -- Optional: Make the inactive panes slightly dimmer to help the active one stand out
 config.inactive_pane_hsb = {
-    saturation = 1,
-    brightness = 0.7,
+    saturation = 0.7,
+    brightness = 0.5,
 }
 
 config.window_padding = {
