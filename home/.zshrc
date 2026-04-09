@@ -69,6 +69,8 @@ source <(carapace _carapace)
 
 alias zshconfig="zed ~/.zshrc"
 alias reload='source ~/.zshrc;echo "ZSH aliases sourced."'
+alias edit="zed ."
+alias view="zed ."
 
 alias c='clear'
 
