@@ -65,18 +65,23 @@ down:
 shell:
     docker compose exec dev bash
 
+# update if your project uses a different command
 build:
     docker compose exec dev {{build}}
 
+# update if your project uses a different command
 run:
     docker compose exec dev {{run}}
 
+# update if your project uses a different command
 test:
     docker compose exec dev {{test}}
 
+# update if your project uses a different command
 lint:
     docker compose exec dev {{lint}}
 
+# update if your project uses a different command
 fmt:
     docker compose exec dev {{fmt}}
 
