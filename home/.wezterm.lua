@@ -18,6 +18,10 @@ config.line_height = 1.2
 -- config.color_scheme = 'catppuccin-Mocha'
 config.color_scheme = 'catppuccin-frappe'
 -- config.color_scheme = 'catppuccin-macchiato'
+-- config.color_scheme = 'Chameleon (Gogh)'
+-- config.color_scheme = 'Chester'
+-- config.color_scheme = 'Codeschool (base16)'
+-- config.color_scheme = 'Material'
 
 config.font = wezterm.font 'JetBrainsMono Nerd Font'
 
