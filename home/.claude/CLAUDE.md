@@ -2,8 +2,12 @@
 
 ## Git
 - Never add Co-Authored-By or any Claude/Anthropic attribution to commit messages. Use only the global git user name and email.
+- **HARD RULE**: Every commit message must follow Conventional Commits format: `<type>(<optional scope>): <description>`. Valid types: `feat`, `fix`, `chore`, `docs`, `style`, `refactor`, `test`, `ci`, `perf`, `build`. No exceptions — never use a plain message like "update X" or "add Y" without a type prefix.
 - When creating or updating a PR, always include a concise description summarizing the changes.
-- Before committing or pushing on `main` (or `master`), always ask: "You're on main — continue here or create a new branch?" Suggest a branch name based on the work. Do not proceed until the user confirms.
+- **HARD BLOCK**: Never commit or push directly to `main` or `master`. No exceptions.
+  - Before ANY `git commit` or `git push`: run `git branch --show-current` first.
+  - If on `main`/`master`: STOP. Do NOT run the command. Ask: "You're on main — create a branch first? Suggested: `<branch>`."
+  - "Proceed" means: create/switch to a new branch, THEN commit. Never means: commit to main even with user approval.
 
 ## Plan Mode
 
