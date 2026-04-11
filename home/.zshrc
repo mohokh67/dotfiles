@@ -1,5 +1,5 @@
 # PATH exports (set early before tool initialization)
-export PATH="$HOME/.npm-global/bin:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/.npm-global/bin:$PATH"
 export EDITOR="zed"
 
 # Oh My Zsh configuration
@@ -246,40 +246,44 @@ alias youtube-audio='yt-dlp \
 ############################################ Aliases end
 
 brewall() {
+  echo "Upgrade: [1] all  [2] casks only  [3] formulae only"
+  read -r "mode?Choice (default: 1): "
+  mode=${mode:-1}
+
+  local -a upgrade_cmd
+  case $mode in
+    2) upgrade_cmd=(brew upgrade --cask) ;;
+    3) upgrade_cmd=(brew upgrade --formula) ;;
+    *) upgrade_cmd=(brew upgrade) ;;
+  esac
+
   echo "=============================="
   echo "Homebrew maintenance started: $(date)"
   echo "=============================="
 
-  echo ""
-  echo "[1/6] 🌍 Updating Homebrew..."
+  echo "\n[1/6] Updating Homebrew..."
   brew update || { echo "[FAIL] brew update failed at $(date)"; return 1; }
   echo "[OK] Homebrew updated"
 
-  echo ""
-  echo "[2/6] ⬆️ Upgrading installed formulae and casks..."
-  brew upgrade || { echo "[FAIL] brew upgrade failed at $(date)"; return 1; }
+  echo "\n[2/6] Upgrading..."
+  $upgrade_cmd || { echo "[FAIL] upgrade failed at $(date)"; return 1; }
   echo "[OK] Upgrades completed"
 
-  echo ""
-  echo "[3/6] 🧹 Cleaning old cache and stale files..."
+  echo "\n[3/6] Cleaning old cache..."
   brew cleanup --prune=all || { echo "[FAIL] brew cleanup failed at $(date)"; return 1; }
   echo "[OK] Cleanup completed"
 
-  echo ""
-  echo "[4/6] 🗑️ Removing unused dependencies..."
+  echo "\n[4/6] Removing unused deps..."
   brew autoremove || { echo "[FAIL] brew autoremove failed at $(date)"; return 1; }
   echo "[OK] Autoremove completed"
 
-  echo ""
-  echo "[5/6] 💾 Syncing Brewfile..."
+  echo "\n[5/6] Syncing Brewfile..."
   brew bundle dump --force || { echo "[FAIL] brew bundle dump failed at $(date)"; return 1; }
   echo "[OK] Brewfile updated"
 
-  echo ""
-  echo "[6/6] 🩺 Running diagnostics..."
-  brew doctor || echo "[WARN] brew doctor reported issues (see above)"
+  echo "\n[6/6] Diagnostics..."
+  brew doctor || echo "[WARN] brew doctor reported issues"
 
-  echo ""
   echo "=============================="
   echo "Homebrew maintenance finished: $(date)"
   echo "=============================="
