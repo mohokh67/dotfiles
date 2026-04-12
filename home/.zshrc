@@ -293,3 +293,5 @@ brewall() {
 export _ZO_DOCTOR=0
 
 eval "$(zoxide init --cmd cd zsh)"
+
+alias claude-mem='bun "~/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
