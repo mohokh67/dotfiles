@@ -34,6 +34,7 @@
   },
 
   "agent": {
+    "sidebar_side": "right",
     "dock": "right",
     "play_sound_when_agent_done": true,
     "inline_assistant_model": {

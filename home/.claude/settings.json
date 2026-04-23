@@ -1,4 +1,25 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(stow -d /Users/mehr/dev/dotfiles -t ~ home)",
+      "Bash(stow --simulate -d . -t ~ home)",
+      "Bash(stow --simulate -v -d /Users/mehr/dev/dotfiles -t ~ home)",
+      "Bash(stow --simulate -v 2 -d /Users/mehr/dev/dotfiles -t /tmp/stow_test home)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(chmod +x /Users/mehr/dev/dotfiles/brew/dump.sh /Users/mehr/dev/dotfiles/brew/install.sh)",
+      "Bash(sh /Users/mehr/dev/dotfiles/brew/dump.sh)",
+      "Bash(rm /Users/mehr/dev/dotfiles/.gitconfig)",
+      "Bash(stow -d ~/dev/dotfiles -t ~ home)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(stow --help)",
+      "Bash(stow:*)",
+      "mcp__plugin_claude-mem_mcp-search__search"
+    ],
+    "defaultMode": "plan"
+  },
   "hooks": {
     "PreToolUse": [
       {
@@ -25,7 +46,8 @@
     "frontend-design@claude-plugins-official": true,
     "superpowers@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
-    "claude-code-setup@claude-plugins-official": true
+    "claude-code-setup@claude-plugins-official": true,
+    "hookify@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "thedotmack": {
