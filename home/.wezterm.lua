@@ -18,15 +18,12 @@ config.line_height = 1.2
 -- config.color_scheme = 'catppuccin-Mocha'
 -- config.color_scheme = 'catppuccin-frappe'
 -- config.color_scheme = 'catppuccin-macchiato'
--- config.color_scheme = 'Chameleon (Gogh)'
--- config.color_scheme = 'Chester'
--- config.color_scheme = 'Codeschool (base16)'
 -- config.color_scheme = 'Material'
 -- config.color_scheme = 'Gruvbox Dark'
--- config.color_scheme = 'Tokyo Night'
+config.color_scheme = 'Tokyo Night'
 -- config.color_scheme = 'Dracula'
-config.color_scheme = 'Solarized Dark - Patched'
--- config.color_scheme = 'MaterialDark'
+-- config.color_scheme = 'Solarized Dark - Patched'
+-- config.color_scheme = 'One Dark (Gogh)'
 
 
 config.font = wezterm.font 'JetBrainsMono Nerd Font'
