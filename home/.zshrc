@@ -67,10 +67,10 @@ source <(carapace _carapace)
 
 ############################################ Aliases
 
-alias zshconfig="zed ~/.zshrc"
+alias zshconfig="zed ~/.zshrc -e"
 alias reload='source ~/.zshrc;echo "ZSH aliases sourced."'
-alias edit="zed ."
-alias view="zed ."
+alias edit="zed . --classic"
+alias view="zed . --classic"
 
 alias c='clear'
 
@@ -161,7 +161,7 @@ alias ghr="gh run list"
 alias ghrw="gh run watch"
 
 # AWS
-alias awsconfig='zed ~/.aws/config'
+alias awsconfig='zed ~/.aws/config --classic'
 alias aws-sso='aws --profile sso sso login'
 
 # Docker
@@ -208,8 +208,8 @@ alias move='rsync -ah --progress --ignore-errors --log-file=rsync.log --remove-s
 alias mkdir='mkdir -pv'
 
 # Quick edit
-alias hosts='sudo zed /etc/hosts'
-alias gitconfig='zed ~/.gitconfig'
+alias hosts='sudo zed /etc/hosts --classic'
+alias gitconfig='zed ~/.gitconfig -e'
 
 # YouTube video downloader
 # brew install ffmpeg
@@ -293,5 +293,3 @@ brewall() {
 export _ZO_DOCTOR=0
 
 eval "$(zoxide init --cmd cd zsh)"
-
-alias claude-mem='bun "~/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
