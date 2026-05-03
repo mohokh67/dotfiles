@@ -2,7 +2,7 @@
 
 > **Price:** 🆓 Free · 💲 Paid · 🆓💲 Freemium &nbsp;|&nbsp; **OSS:** ✅ Open source &nbsp;|&nbsp; **Privacy:** ✅ Privacy-focused &nbsp;|&nbsp; **Notes:** ⭐ Favourite
 
-- [Dev list](https://gist.github.com/mohokh67/ec4512a0cd000546eb2243e0524326ba)
+- [Dev list](dev.md)
 
 ---
 
