@@ -18,19 +18,23 @@ After completing a chunk of **code work** (not docs/config-only changes):
 
 1. Announce work is complete with a one-line summary
 2. Recommend creating a branch — suggest name in format `<type>/<short-description>` (e.g., `feat/add-login`, `fix/null-check`) — wait for confirmation before creating
-3. If confirmed: update `CLAUDE.md` with new patterns if any; update `README.md` if behavior/features changed; then stage all relevant files and commit using Conventional Commits format
-4. Recommend creating a PR — if confirmed, `gh pr create` (Pre-PR Checklist runs automatically)
+3. If confirmed: update the **project's** `CLAUDE.md` with new patterns if any; update `README.md` if behavior/features changed; then stage all relevant files and commit using Conventional Commits format
+4. Recommend creating a PR — if confirmed, offer the Pre-PR Checklist before running `gh pr create`
 
 ## Pre-PR Checklist
 
-**HARD RULE**: Before ANY `gh pr create` or pull request creation, run ALL of the following in order:
+Before ANY `gh pr create`, ask the user:
 
-1. `simplify` skill — clean up code
-2. `requesting-code-review` skill — subagent code review
-3. `security-review` skill — security audit
+> "Before creating the PR, which checks would you like to run?
+> 1. `simplify` — clean up code
+> 2. `requesting-code-review` — subagent code review
+> 3. `security-review` — security audit
+> Reply with numbers (e.g. `1 3`), `all`, or `none`."
 
-Fix any critical issues found before proceeding. Only create the PR after all checks pass.
+Run only the selected checks. Fix any critical issues found before proceeding.
 
 ## Plan Mode
 
-- At the end of each plan, give me a list of unresolved questions to answer, if any.
+- Use the `writing-plans` skill before writing any multi-step implementation plan.
+- At the end of each plan, list any unresolved questions for me to answer.
+- End planning turns with `ExitPlanMode`, not with text asking for approval.
