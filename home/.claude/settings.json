@@ -31,6 +31,16 @@
           }
         ]
       }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/Users/mehr/.claude/hooks/context-mode-cache-heal.mjs\""
+          }
+        ]
+      }
     ]
   },
   "statusLine": {
@@ -46,9 +56,17 @@
     "superpowers@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
-    "hookify@claude-plugins-official": false
+    "hookify@claude-plugins-official": false,
+    "context-mode@context-mode": true
   },
-  "extraKnownMarketplaces": {},
+  "extraKnownMarketplaces": {
+    "context-mode": {
+      "source": {
+        "source": "github",
+        "repo": "mksglu/context-mode"
+      }
+    }
+  },
   "effortLevel": "high",
   "skipDangerousModePermissionPrompt": true,
   "theme": "light",
