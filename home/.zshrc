@@ -76,7 +76,7 @@ alias c='clear'
 
 # Replace OS commands: Begin
 alias cat='bat'
-alias find='fd'
+# alias find='fd'
 
 # install this with brew: cbonsai
 alias screensaver="cbonsai -S"
@@ -178,9 +178,7 @@ alias dex='docker exec -it'
 alias update-packages="npx npm-check-updates"
 alias sort-package-json="npx sort-package-json"
 alias npkill="npx npkill"
-alias pn="pnpm"
-alias nis='npm i --save'
-alias nid='npm i -D'
+
 
 # Python
 alias python="uv run python"
@@ -293,3 +291,7 @@ brewall() {
 export _ZO_DOCTOR=0
 
 eval "$(zoxide init --cmd cd zsh)"
+
+ # Machine-specific overrides (not stowed, not in git)
+ #THIS MUST BE AT THE END OF THE FILE!!!
+ [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
