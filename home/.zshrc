@@ -190,6 +190,9 @@ alias cc="claude"
 alias cch="claude --model haiku"
 alias ccx="claude --dangerously-skip-permissions"
 
+# OpenCode CLI
+alias oc="opencode"
+
 # System/Utility
 alias ip="curl -s ifconfig.me"
 alias localip="ipconfig getifaddr en0"

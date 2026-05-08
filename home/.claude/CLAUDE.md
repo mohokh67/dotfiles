@@ -23,7 +23,9 @@ After completing a chunk of **code work** (not docs/config-only changes):
 
 ## Pre-PR Checklist
 
-Before ANY `gh pr create`, ask the user:
+**HARD BLOCK**: Never run `gh pr create` without first asking this question — even if the user says "commit and create a PR" in one message. The checklist is mandatory before the `gh pr create` call, not optional.
+
+Ask the user:
 
 > "Before creating the PR, which checks would you like to run?
 > 1. `simplify` — clean up code
