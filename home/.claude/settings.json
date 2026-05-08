@@ -64,7 +64,8 @@
       "source": {
         "source": "github",
         "repo": "mksglu/context-mode"
-      }
+      },
+      "autoUpdate": true
     }
   },
   "effortLevel": "high",
