@@ -5,15 +5,23 @@
     "*": "ask",
     "read": "allow", //  — reading a file (matches the file path)
     "edit": "ask", // — all file modifications (covers edit, write, patch)
-    "glob": "ask", // file globbing (matches the glob pattern)
+    "glob": "allow", // file globbing (matches the glob pattern)
     "grep": "allow", // content search (matches the regex pattern)
-    "bash": "ask", // running shell commands (matches parsed commands like git status --porcelain)
+    "bash": {
+      // running shell commands (matches parsed commands like git status --porcelain)
+      "*": "ask",
+      "git *": "allow",
+      "pnpm *": "allow",
+      "rm *": "ask",
+      "grep *": "allow"
+    },
     "task": "allow", // launching subagents (matches the subagent type)
     "skill": "allow", // loading a skill (matches the skill name)
     "lsp": "allow", // running LSP queries (currently non-granular)
+    "todowrite": "allow",
     "question": "allow", // asking the user questions during execution
     "webfetch": "allow", // fetching a URL (matches the URL)
-    "websearch": "ask", // web search (matches the query)
+    "websearch": "allow", // web search (matches the query)
     "external_directory": "ask", // triggered when a tool touches paths outside the project working directory
     "doom_loop": "ask" // triggered when the same tool call repeats 3 times with identical input
   }

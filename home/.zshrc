@@ -137,8 +137,12 @@ alias gds='git diff --staged'
 alias gl='git log --oneline -20'
 alias gpull='git pull'
 alias gpush='git push'
-alias gmain='git checkout main'
 alias gcommit='git commit -m'
+
+gmain() {
+  git checkout main || return 1
+  git pull
+}
 alias gst='git stash'
 alias gstp='git stash pop'
 alias gundo='git reset HEAD~1 --soft'
