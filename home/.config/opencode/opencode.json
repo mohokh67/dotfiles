@@ -13,7 +13,10 @@
       "git *": "allow",
       "pnpm *": "allow",
       "rm *": "ask",
-      "grep *": "allow"
+      "grep *": "allow",
+      "cat *": "allow",
+      "ls *": "allow",
+      "gh *": "allow"
     },
     "task": "allow", // launching subagents (matches the subagent type)
     "skill": "allow", // loading a skill (matches the skill name)
