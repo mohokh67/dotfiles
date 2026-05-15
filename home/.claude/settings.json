@@ -57,7 +57,8 @@
     "feature-dev@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
     "hookify@claude-plugins-official": false,
-    "context-mode@context-mode": true
+    "context-mode@context-mode": true,
+    "typescript-lsp@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "context-mode": {

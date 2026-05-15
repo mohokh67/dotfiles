@@ -195,7 +195,32 @@ alias cch="claude --model haiku"
 alias ccx="claude --dangerously-skip-permissions"
 
 # OpenCode CLI
-alias oc="opencode"
+alias oc="opencode --agent plan"
+alias occ="opencode -c" # OpenCode continue last session
+alias oc-free="opencode --model opencode/big-pickle"
+# run "opencode models" to get the list of all models
+# opencode/big-pickle
+# opencode/deepseek-v4-flash-free
+# opencode/minimax-m2.5-free
+# opencode/nemotron-3-super-free
+# opencode/qwen3.6-plus-free
+# opencode-go/deepseek-v4-flash
+# opencode-go/deepseek-v4-pro
+# opencode-go/glm-5
+# opencode-go/glm-5.1
+# opencode-go/kimi-k2.5
+# opencode-go/kimi-k2.6
+# opencode-go/mimo-v2.5
+# opencode-go/mimo-v2.5-pro
+# opencode-go/minimax-m2.5
+# opencode-go/minimax-m2.7
+# opencode-go/qwen3.5-plus
+# opencode-go/qwen3.6-plus
+
+# AI Skills
+alias skills-list="npx skills ls -g"
+alias skills-update="npx skills update"
+
 
 # System/Utility
 alias ip="curl -s ifconfig.me"
