@@ -194,6 +194,9 @@ alias pip="uv run pip"
 alias cc="claude"
 alias cch="claude --model haiku"
 alias ccx="claude --dangerously-skip-permissions"
+alias claude-usage='python3 ~/.claude/usage-report/usage_report.py'
+alias claude-usage-all='python3 ~/.claude/usage-report/usage_report.py --no-compare'
+
 
 # OpenCode CLI
 alias oc="opencode --agent plan"
