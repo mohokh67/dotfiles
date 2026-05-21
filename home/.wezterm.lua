@@ -15,12 +15,12 @@ config.font_size = 17
 config.line_height = 1.2
 
 -- config.color_scheme = 'catppuccin-latte'
--- config.color_scheme = 'catppuccin-Mocha'
+config.color_scheme = 'catppuccin-Mocha'
 -- config.color_scheme = 'catppuccin-frappe'
 -- config.color_scheme = 'catppuccin-macchiato'
 -- config.color_scheme = 'Material'
 -- config.color_scheme = 'Gruvbox Dark'
-config.color_scheme = 'Tokyo Night'
+-- config.color_scheme = 'Tokyo Night'
 -- config.color_scheme = 'Dracula'
 -- config.color_scheme = 'Solarized Dark - Patched'
 -- config.color_scheme = 'One Dark (Gogh)'
@@ -33,7 +33,7 @@ config.colors = {
     cursor_bg = '#7aa2f7',
     cursor_border = '#7aa2f7',
     -- This sets the color of the divider lines between split panes
-    split = '#7aa2f7', -- Change this to any hex color you like (e.g., Magenta)
+    split = '#FFEA00', -- Change this to any hex color you like (e.g., Magenta)
 }
 
 
