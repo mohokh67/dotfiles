@@ -27,6 +27,7 @@ Stow-managed (`home/` → `~`):
 | `.claude/settings.json`     | Claude Code global settings               |
 | `.claude/skills/`           | Claude Code skills                        |
 | `.claude/hooks/`            | Claude Code PreToolUse hooks              |
+| `.claude/usage-report/`     | Claude Code usage analytics dashboard     |
 
 Note: `~/.claude/settings.local.json` is machine-specific — not stowed.
 
