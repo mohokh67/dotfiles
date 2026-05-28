@@ -2,6 +2,18 @@
 
 - Be extremely concise. Sacrifice grammar for concision.
 
+## Human-Facing Drafts
+
+When drafting any text the user will send to another person as-is (Slack, email, PR descriptions, messages to teammates/HR), apply these hard rules unless the user explicitly opts out:
+
+- No em dash (—), en dash where a hyphen/comma works, ellipsis character (…), or curly/smart quotes. Use plain ASCII.
+- Don't open with "I'll", "Let me", "Sure!", "Certainly!", "Absolutely!", "Of course!", or "Great question".
+- No hedging filler: "It's worth noting", "It's important to", "I hope this helps", "Feel free to".
+- No bulleted lists, headers, or perfectly parallel 3-item enumerations inside the drafted message.
+- Use contractions, vary sentence length, sentence fragments are fine.
+
+Does NOT apply to: commit messages, code, code comments, internal 1:1 notes, or chat replies to the user.
+
 ## Git
 
 - Never add Co-Authored-By or any Claude/Anthropic attribution to commit messages. Use only the global git user name and email.
