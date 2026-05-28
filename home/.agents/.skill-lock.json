@@ -82,15 +82,6 @@
       "installedAt": "2026-03-27T22:01:45.556Z",
       "updatedAt": "2026-03-27T22:01:45.556Z"
     },
-    "prd-to-plan": {
-      "source": "mattpocock/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/mattpocock/skills.git",
-      "skillPath": "prd-to-plan/SKILL.md",
-      "skillFolderHash": "7317892c8d1978d485a166e8f7464fd4a45e9c08",
-      "installedAt": "2026-03-27T22:02:09.993Z",
-      "updatedAt": "2026-03-27T22:02:09.993Z"
-    },
     "prd-to-issues": {
       "source": "mattpocock/skills",
       "sourceType": "github",
@@ -133,10 +124,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
-      "skillFolderHash": "3c4ac970c404e8d32c24f2725bfe679e455a925b",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "2c3a4e48571bfe42203ed7b49cae85f31ef4b6f2",
       "installedAt": "2026-05-08T18:47:27.723Z",
-      "updatedAt": "2026-05-15T13:13:25.581Z"
+      "updatedAt": "2026-05-28T23:25:27.902Z"
     },
     "caveman": {
       "source": "mattpocock/skills",
@@ -203,10 +193,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
-      "skillFolderHash": "3ad8fa787b3b9b622d1f5a3d0afc27812ac782fa",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "688c17ec27fe9309d84987716aca37b5ce7f3a88",
       "installedAt": "2026-05-08T18:55:27.305Z",
-      "updatedAt": "2026-05-15T13:13:25.582Z"
+      "updatedAt": "2026-05-22T22:47:51.235Z"
     },
     "triage": {
       "source": "mattpocock/skills",
@@ -223,10 +212,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/productivity/handoff/SKILL.md",
-      "skillFolderHash": "85c644da8f99d073b434261f1e3fc058e2116236",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "7bbb60d64c911617cee7f71b2ba9e24364faa14e",
       "installedAt": "2026-05-15T13:13:25.582Z",
-      "updatedAt": "2026-05-15T13:13:25.582Z"
+      "updatedAt": "2026-05-22T22:47:52.468Z"
     },
     "prototype": {
       "source": "mattpocock/skills",

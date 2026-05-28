@@ -38,6 +38,33 @@
   },
 
   "agent": {
+    "favorite_models": [
+      {
+        "provider": "opencode",
+        "model": "free/minimax-m2.5-free",
+        "enable_thinking": false
+      },
+      {
+        "provider": "opencode",
+        "model": "free/nemotron-3-super-free",
+        "enable_thinking": false
+      },
+      {
+        "provider": "opencode",
+        "model": "free/big-pickle",
+        "enable_thinking": false
+      },
+      {
+        "provider": "opencode",
+        "model": "go/kimi-k2.6",
+        "enable_thinking": false
+      },
+      {
+        "provider": "opencode",
+        "model": "go/kimi-k2.5",
+        "enable_thinking": false
+      }
+    ],
     "sidebar_side": "right",
     "dock": "right",
     "play_sound_when_agent_done": "always",
@@ -46,8 +73,8 @@
       "model": "claude-sonnet-4-thinking",
     },
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4",
+      "provider": "opencode",
+      "model": "free/big-pickle",
     },
   },
   "edit_predictions": {

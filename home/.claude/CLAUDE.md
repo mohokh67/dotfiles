@@ -1,6 +1,11 @@
 ## Behavior
 
 - Be extremely concise. Sacrifice grammar for concision.
+- Always execute tasks inline without pausing to ask for confirmation at implementation checkpoints. Proceed through all steps; only stop if genuinely blocked or a destructive/irreversible action arises.
+
+## Code Design Principles
+
+**HARD BLOCK**: Before writing any code that introduces new logic or modifies existing behavior, read the relevant codebase and silently verify the design satisfies: DRY, KISS, SOLID, SoC, and YAGNI. Only surface concerns when a principle is at risk or a notable tradeoff requires a decision. Never write code first and refactor afterward.
 
 ## Human-Facing Drafts
 
