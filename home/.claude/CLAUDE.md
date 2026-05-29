@@ -21,8 +21,8 @@ Does NOT apply to: commit messages, code, code comments, internal 1:1 notes, or 
 
 ## Git
 
-- Never add Co-Authored-By or any Claude/Anthropic attribution to commit messages. Use only the global git user name and email.
 - **HARD RULE**: Every commit message must follow Conventional Commits format: `<type>(<optional scope>): <description>`. Valid types: `feat`, `fix`, `chore`, `docs`, `style`, `refactor`, `test`, `ci`, `perf`, `build`. No exceptions — never use a plain message like "update X" or "add Y" without a type prefix.
+- For commit use `caveman-commit` skill
 - When creating or updating a PR, always include a concise description summarizing the changes.
 - **HARD BLOCK**: Never commit or push directly to `main` or `master`. No exceptions.
   - Before ANY `git commit` or `git push`: run `git branch --show-current` first.
@@ -45,10 +45,11 @@ After completing a chunk of **code work** (not docs/config-only changes):
 Ask the user:
 
 > "Before creating the PR, which checks would you like to run?
+>
 > 1. `simplify` — clean up code
 > 2. `requesting-code-review` — subagent code review
 > 3. `security-review` — security audit
-> Reply with numbers (e.g. `1 3`), `all`, or `none`."
+>    Reply with numbers (e.g. `1 3`), `all`, or `none`."
 
 Run only the selected checks. Fix any critical issues found before proceeding.
 

@@ -245,6 +245,70 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-05-15T13:13:25.587Z",
       "updatedAt": "2026-05-15T13:13:25.587Z"
+    },
+    "ui-ux-pro-max": {
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+      "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
+      "skillFolderHash": "75e1acaafe8b08e59d4b86fc253ac7873aff6bba",
+      "pluginName": "ui-ux-pro-max",
+      "installedAt": "2026-05-29T17:00:25.741Z",
+      "updatedAt": "2026-05-29T17:00:25.741Z"
+    },
+    "soultrace": {
+      "source": "soultrace-ai/soultrace-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/soultrace-ai/soultrace-skill.git",
+      "skillPath": "skills/soultrace/SKILL.md",
+      "skillFolderHash": "8e36f5a02579a973067fe5c1a662a8be4a1f55b6",
+      "installedAt": "2026-05-29T17:04:09.725Z",
+      "updatedAt": "2026-05-29T17:04:09.725Z"
+    },
+    "caveman-commit": {
+      "source": "juliusbrussee/caveman",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/juliusbrussee/caveman.git",
+      "skillPath": "skills/caveman-commit/SKILL.md",
+      "skillFolderHash": "34e52a2870460e4ed4b79049d5a2569097c0710e",
+      "installedAt": "2026-05-29T18:03:43.217Z",
+      "updatedAt": "2026-05-29T18:03:43.217Z"
+    },
+    "caveman-compress": {
+      "source": "juliusbrussee/caveman",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/juliusbrussee/caveman.git",
+      "skillPath": "skills/caveman-compress/SKILL.md",
+      "skillFolderHash": "405938e27e3c90858bc7ed88ff07d6aa0d3cbd2c",
+      "installedAt": "2026-05-29T18:09:45.216Z",
+      "updatedAt": "2026-05-29T18:09:45.216Z"
+    },
+    "caveman-review": {
+      "source": "juliusbrussee/caveman",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/juliusbrussee/caveman.git",
+      "skillPath": "skills/caveman-review/SKILL.md",
+      "skillFolderHash": "2d9762b7aec395b9713fde57fb8965bc3bbd2c3f",
+      "installedAt": "2026-05-29T18:10:38.172Z",
+      "updatedAt": "2026-05-29T18:10:38.172Z"
+    },
+    "impeccable": {
+      "source": "pbakaus/impeccable",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/pbakaus/impeccable.git",
+      "skillPath": ".agents/skills/impeccable/SKILL.md",
+      "skillFolderHash": "cfefceef654fea78fa0ea9c1f9451a5c852de681",
+      "installedAt": "2026-05-29T18:20:01.512Z",
+      "updatedAt": "2026-05-29T18:20:01.512Z"
+    },
+    "minimalist-ui": {
+      "source": "leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/leonxlnx/taste-skill.git",
+      "skillPath": "skills/minimalist-skill/SKILL.md",
+      "skillFolderHash": "5509c012862cda27e2ed7efae89ed940ecc53add",
+      "installedAt": "2026-05-29T21:09:59.364Z",
+      "updatedAt": "2026-05-29T21:09:59.364Z"
     }
   },
   "dismissed": {
@@ -263,6 +327,7 @@
     "github-copilot",
     "kimi-cli",
     "opencode",
-    "warp"
+    "warp",
+    "zed"
   ]
 }
