@@ -1,0 +1,48 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // "model": "opencode-go/kimi-k2.6",
+  // "model": "opencode-go/kimi-k2.5",
+  // "model": "opencode-go/qwen3.7-max",
+  "model": "opencode-go/glm-5.1",
+  "small_model": "opencode/kimi-k2.5-free",
+  // "small_model": "opencode-go/qwen3.5-plus",
+  "mode": {
+    "build": {
+      "permission": {
+        "read": "allow",
+        "write": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "edit": "allow",
+        "todowrite": "allow",
+        "task": "allow",
+        "webfetch": "allow",
+        "codesearch": "allow",
+        "skill": "allow",
+        "lsp": "allow",
+        "repo_overview": "allow",
+        "question": "allow"
+      }
+    },
+    "plan": {
+      "permission": {
+        "read": "allow",
+        "write": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "edit": "allow",
+        "todowrite": "allow",
+        "task": "allow",
+        "codesearch": "allow",
+        "skill": "allow",
+        "lsp": "allow",
+        "repo_overview": "allow",
+        "question": "allow"
+      }
+    }
+  }
+}

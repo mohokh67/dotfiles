@@ -15,15 +15,13 @@ config.font_size = 17
 config.line_height = 1.2
 
 -- config.color_scheme = 'catppuccin-latte'
-config.color_scheme = 'catppuccin-Mocha'
 -- config.color_scheme = 'catppuccin-frappe'
 -- config.color_scheme = 'catppuccin-macchiato'
 -- config.color_scheme = 'Material'
--- config.color_scheme = 'Gruvbox Dark'
 -- config.color_scheme = 'Tokyo Night'
 -- config.color_scheme = 'Dracula'
--- config.color_scheme = 'Solarized Dark - Patched'
 -- config.color_scheme = 'One Dark (Gogh)'
+-- config.color_scheme = 'Wez'
 
 
 config.font = wezterm.font 'JetBrainsMono Nerd Font'

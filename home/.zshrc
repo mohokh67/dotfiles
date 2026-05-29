@@ -205,9 +205,8 @@ alias oc-free="opencode --model opencode/big-pickle"
 # run "opencode models" to get the list of all models
 # opencode/big-pickle
 # opencode/deepseek-v4-flash-free
-# opencode/minimax-m2.5-free
+# opencode/mimo-v2.5-free
 # opencode/nemotron-3-super-free
-# opencode/qwen3.6-plus-free
 # opencode-go/deepseek-v4-flash
 # opencode-go/deepseek-v4-pro
 # opencode-go/glm-5
@@ -220,6 +219,7 @@ alias oc-free="opencode --model opencode/big-pickle"
 # opencode-go/minimax-m2.7
 # opencode-go/qwen3.5-plus
 # opencode-go/qwen3.6-plus
+# opencode-go/qwen3.7-max
 
 # AI Skills
 alias skills-list="npx skills ls -g"
