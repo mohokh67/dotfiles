@@ -35,7 +35,7 @@ After completing a chunk of **code work** (not docs/config-only changes):
 
 1. Announce work is complete with a one-line summary
 2. Recommend creating a branch — suggest name in format `<type>/<short-description>` (e.g., `feat/add-login`, `fix/null-check`) — wait for confirmation before creating
-3. If confirmed: update the **project's** `CLAUDE.md` with new patterns if any; update `README.md` if behavior/features changed; then stage all relevant files and commit using Conventional Commits format
+3. If confirmed: update the **project's** `CLAUDE.md` if non-obvious patterns, gotchas, or architectural decisions were discovered; update `README.md` if behavior/features changed; then stage all relevant files and commit using Conventional Commits format
 4. Recommend creating a PR — if confirmed, offer the Pre-PR Checklist before running `gh pr create`
 
 ## Pre-PR Checklist
@@ -54,6 +54,6 @@ Run only the selected checks. Fix any critical issues found before proceeding.
 
 ## Plan Mode
 
-- Use the `writing-plans` skill before writing any multi-step implementation plan.
+- Use the `writing-plans` skill before writing any multi-step implementation plan (only when not already in `/plan` mode).
 - At the end of each plan, list any unresolved questions for me to answer.
 - End planning turns with `ExitPlanMode`, not with text asking for approval.
