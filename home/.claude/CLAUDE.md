@@ -21,8 +21,7 @@ Does NOT apply to: commit messages, code, code comments, internal 1:1 notes, or 
 
 ## Git
 
-- **HARD RULE**: Every commit message must follow Conventional Commits format: `<type>(<optional scope>): <description>`. Valid types: `feat`, `fix`, `chore`, `docs`, `style`, `refactor`, `test`, `ci`, `perf`, `build`. No exceptions — never use a plain message like "update X" or "add Y" without a type prefix.
-- For commit use `caveman-commit` skill
+- **HARD RULE**: All commits must use Conventional Commits format (`<type>(<scope>): <description>`). No exceptions — never a plain message like "update X". Use `caveman-commit` skill.
 - When creating or updating a PR, always include a concise description summarizing the changes.
 - **HARD BLOCK**: Never commit or push directly to `main` or `master`. No exceptions.
   - Before ANY `git commit` or `git push`: run `git branch --show-current` first.
@@ -35,7 +34,7 @@ After completing a chunk of **code work** (not docs/config-only changes):
 
 1. Announce work is complete with a one-line summary
 2. Recommend creating a branch — suggest name in format `<type>/<short-description>` (e.g., `feat/add-login`, `fix/null-check`) — wait for confirmation before creating
-3. If confirmed: update the **project's** `CLAUDE.md` if non-obvious patterns, gotchas, or architectural decisions were discovered; update `README.md` if behavior/features changed; then stage all relevant files and commit using Conventional Commits format
+3. If confirmed: update the project's primary docs file (`CLAUDE.md` or `AGENTS.md` — whichever is the project's source of truth) if non-obvious patterns, gotchas, or architectural decisions were discovered; update `README.md` if behavior/features changed; then stage all relevant files and commit
 4. Recommend creating a PR — if confirmed, offer the Pre-PR Checklist before running `gh pr create`
 
 ## Pre-PR Checklist
@@ -49,7 +48,9 @@ Ask the user:
 > 1. `simplify` — clean up code
 > 2. `requesting-code-review` — subagent code review
 > 3. `security-review` — security audit
->    Reply with numbers (e.g. `1 3`), `all`, or `none`."
+> 4. `verify` — run app end-to-end (skip for config/library-only changes)
+>
+> Reply with numbers (e.g. `1 3`), `all`, or `none`."
 
 Run only the selected checks. Fix any critical issues found before proceeding.
 
