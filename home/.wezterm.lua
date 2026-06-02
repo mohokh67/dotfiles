@@ -18,6 +18,7 @@ config.line_height = 1.2
 -- config.color_scheme = 'catppuccin-frappe'
 -- config.color_scheme = 'catppuccin-macchiato'
 -- config.color_scheme = 'Tokyo Night'
+config.color_scheme = 'ayu'
 
 config.font = wezterm.font 'JetBrainsMono Nerd Font'
 
