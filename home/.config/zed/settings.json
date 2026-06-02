@@ -97,7 +97,7 @@
   },
   "ui_font_size": 27,
   "buffer_font_size": 16,
-  "theme": "Ayu Glass Dark",
+  "theme": "Ayu Dark",
   "git": {
     "hunk_style": "staged_hollow",
     "inline_blame": {
