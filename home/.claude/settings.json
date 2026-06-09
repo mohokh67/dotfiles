@@ -30,6 +30,15 @@
             "command": "~/.claude/hooks/block-dangerous-git.sh"
           }
         ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
+        ]
       }
     ],
     "SessionStart": [
