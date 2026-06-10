@@ -129,14 +129,13 @@
       "updatedAt": "2026-05-28T23:25:27.902Z"
     },
     "caveman": {
-      "source": "mattpocock/skills",
+      "source": "juliusbrussee/caveman",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/mattpocock/skills.git",
-      "skillPath": "skills/productivity/caveman/SKILL.md",
-      "skillFolderHash": "17972a1bdbf5909b9dbdc435ad348f0bf45f8664",
-      "pluginName": "mattpocock-skills",
+      "sourceUrl": "https://github.com/juliusbrussee/caveman.git",
+      "skillPath": "skills/caveman/SKILL.md",
+      "skillFolderHash": "75b63aa9ec7bbb0e72bb6b3524ff6b576c14a05a",
       "installedAt": "2026-05-08T18:48:30.955Z",
-      "updatedAt": "2026-05-15T13:13:25.578Z"
+      "updatedAt": "2026-06-10T18:50:33.684Z"
     },
     "zoom-out": {
       "source": "mattpocock/skills",
@@ -173,10 +172,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/to-prd/SKILL.md",
-      "skillFolderHash": "d6eff3e99a325d2d9c2acbe31b4d76fa5340a154",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "fb4503f54bc618da08df2fd74109fbe57e4d8150",
       "installedAt": "2026-05-08T18:49:42.893Z",
-      "updatedAt": "2026-05-15T13:13:25.585Z"
+      "updatedAt": "2026-06-10T18:46:30.925Z"
     },
     "tdd": {
       "source": "mattpocock/skills",
@@ -297,9 +295,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/pbakaus/impeccable.git",
       "skillPath": ".agents/skills/impeccable/SKILL.md",
-      "skillFolderHash": "cfefceef654fea78fa0ea9c1f9451a5c852de681",
+      "skillFolderHash": "836a4c42e40b2f4bf2bd2741a2b363347231f308",
       "installedAt": "2026-05-29T18:20:01.512Z",
-      "updatedAt": "2026-05-29T18:20:01.512Z"
+      "updatedAt": "2026-06-10T18:46:33.673Z"
     },
     "minimalist-ui": {
       "source": "leonxlnx/taste-skill",
@@ -317,15 +315,14 @@
   "lastSelectedAgents": [
     "amp",
     "antigravity",
+    "antigravity-cli",
     "cline",
     "codex",
     "cursor",
     "deepagents",
-    "dexto",
-    "firebender",
     "gemini-cli",
     "github-copilot",
-    "kimi-cli",
+    "kimi-code-cli",
     "opencode",
     "warp",
     "zed"
