@@ -30,25 +30,6 @@
             "command": "~/.claude/hooks/block-dangerous-git.sh"
           }
         ]
-      },
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "rtk hook claude"
-          }
-        ]
-      }
-    ],
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"/Users/mehr/.claude/hooks/context-mode-cache-heal.mjs\""
-          }
-        ]
       }
     ]
   },
@@ -66,17 +47,7 @@
     "feature-dev@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
     "hookify@claude-plugins-official": false,
-    "context-mode@context-mode": false,
     "typescript-lsp@claude-plugins-official": false
-  },
-  "extraKnownMarketplaces": {
-    "context-mode": {
-      "source": {
-        "source": "github",
-        "repo": "mksglu/context-mode"
-      },
-      "autoUpdate": false
-    }
   },
   "effortLevel": "high",
   "skipDangerousModePermissionPrompt": true,
