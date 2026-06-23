@@ -190,6 +190,9 @@ alias python="uv run python"
 alias python3="uv run python"
 alias pip="uv run pip"
 
+# Herdr
+alias h="herdr"
+
 # Claude CLI
 alias cc="claude"
 alias cch="claude --model haiku"

@@ -24,6 +24,7 @@ Personal dotfiles repo managed with GNU Stow. Configs only — no build, test, o
 | `.config/zed/settings.json` | Zed editor |
 | `.config/tmux/tmux.conf` | tmux |
 | `.config/yazi/` | yazi file manager (keymap, theme, flavors) |
+| `.config/herdr/config.toml` | herdr config |
 | `.config/opencode/opencode.json`, `tui.json` | OpenCode TUI config |
 | `.claude/CLAUDE.md` | Claude Code behavioral instructions |
 | `.claude/settings.json` | Claude Code global settings |
