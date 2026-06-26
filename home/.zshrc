@@ -48,8 +48,6 @@ eval "$(fzf --zsh)"
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
-
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	command yazi "$@" --cwd-file="$tmp"
@@ -100,7 +98,6 @@ cx(){
     cd "$1" && ll
 }
 
-alias h='history'
 alias home='cd ~'
 
 alias path='echo -e ${PATH//:/\\n}'
