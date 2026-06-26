@@ -128,12 +128,9 @@ pdfcompress() {
 
 # Git
 alias gs='git status'
-alias ga='git add'
 alias gaa='git add --all'
-alias gb='git branch'
-alias gco='git checkout'
-alias gcb='git checkout -b'
-alias gd='git diff'
+alias gd='hunk diff'
+alias gdl='hunk show' # review the latest commit
 alias gds='git diff --staged'
 alias gl='git log --oneline -20'
 alias gpull='git pull'
@@ -153,15 +150,11 @@ alias ghw="gh repo view --web"
 alias ghpr="gh pr create"
 alias ghprs="gh pr list"
 alias ghprv="gh pr view"
-alias ghprc="gh pr checkout"
-alias ghprm="gh pr merge"
 alias ghpr-web="gh pr view --web"
 alias ghi="gh issue list"
 alias ghic="gh issue create"
 alias ghiv="gh issue view"
 alias ghi-web="gh issue view --web"
-alias ghrc="gh repo clone"
-alias ghrf="gh repo fork"
 alias ghr="gh run list"
 alias ghrw="gh run watch"
 

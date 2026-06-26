@@ -1,4 +1,3 @@
-onboarding = false
 # herdr configuration
 # Place this file at ~/.config/herdr/config.toml
 
@@ -174,12 +173,11 @@ agent_panel_scope = "all"
 # herdr = show top-right in-app toasts
 # terminal = ask the outer terminal to show a desktop notification
 # system = ask the OS notification service directly
-delivery = "terminal"
 
 # Play sounds when agents change state in background workspaces
 delivery = "terminal"
 [ui.sound]
-# enabled = true
+enabled = false
 # Optional custom mp3 sound files. Relative paths are resolved from this config file's directory.
 # path = "sounds/notification.mp3"   # one mp3 file for all sound notifications
 # done_path = "sounds/done.mp3"      # overrides only finished notifications
@@ -190,7 +188,6 @@ delivery = "terminal"
 # [ui.sound.agents]
 # droid = "off"
 
-enabled = false
 [session]
 # Resume supported AI-agent panes into their native conversation sessions after
 # a Herdr server restart. Requires official integrations that report session refs.
