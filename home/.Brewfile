@@ -4,6 +4,7 @@ tap "gromgit/brewtils"
 tap "hashicorp/tap"
 tap "iina/mpv-iina"
 tap "jandedobbeleer/oh-my-posh"
+tap "modem-dev/tap"
 tap "mohokh67/portly"
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
@@ -44,8 +45,6 @@ brew "fzf"
 brew "gh"
 # Interpreter for PostScript and PDF
 brew "ghostscript"
-# Syntax-highlighting pager for git and diff output
-brew "git-delta"
 # Agent multiplexer that lives in your terminal
 brew "herdr"
 # Improved top (interactive process viewer)
@@ -98,6 +97,8 @@ brew "yt-dlp"
 brew "zoxide"
 # The AI coding agent built for the terminal.
 brew "anomalyco/tap/opencode", trusted: true
+# Desktop-inspired terminal diff viewer for agent-authored changesets
+brew "modem-dev/tap/hunk", trusted: true
 # Image editing and design software
 cask "affinity"
 # Android SDK component
@@ -181,6 +182,8 @@ cask "protonvpn"
 cask "raycast"
 # Onion routing based messenger
 cask "session"
+# Screenshot measurement and annotation tool
+cask "shottr"
 # Music streaming service
 cask "spotify"
 # Free, open-source, and completely encrypted notes app
