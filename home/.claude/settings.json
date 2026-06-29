@@ -53,5 +53,6 @@
   "skipDangerousModePermissionPrompt": true,
   "theme": "light",
   "preferredNotifChannel": "kitty",
-  "remoteControlAtStartup": false
+  "remoteControlAtStartup": false,
+  "tui": "fullscreen"
 }

@@ -200,8 +200,6 @@ cask "telegram"
 cask "tor-browser"
 # Disk encryption software focusing on security based on TrueCrypt
 cask "veracrypt"
-# Open-source code editor
-cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
 # Real-time voice changer and soundboard
@@ -212,15 +210,4 @@ cask "wezterm"
 cask "wireshark-app"
 # Multiplayer code editor
 cask "zed"
-vscode "dart-code.dart-code"
-vscode "dart-code.flutter"
-vscode "github.copilot-chat"
-vscode "github.vscode-github-actions"
-vscode "hashicorp.terraform"
-vscode "ms-azuretools.vscode-containers"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode.makefile-tools"
-vscode "openai.chatgpt"
-vscode "vscode-icons-team.vscode-icons"
-vscode "yoavbls.pretty-ts-errors"
 npm "corepack"
