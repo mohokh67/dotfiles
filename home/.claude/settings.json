@@ -52,7 +52,9 @@
   "effortLevel": "high",
   "skipDangerousModePermissionPrompt": true,
   "theme": "light",
+  "editorMode": "normal",
   "preferredNotifChannel": "kitty",
-  "remoteControlAtStartup": false,
-  "tui": "fullscreen"
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true,
+  "remoteControlAtStartup": true
 }
