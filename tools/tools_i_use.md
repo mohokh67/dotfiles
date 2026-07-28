@@ -48,7 +48,7 @@
 | [Ping Check](https://www.host-tracker.com/en/ic/ping-test)                                                             | Global ping test from multiple regions | 🆓    |     |         | Website                              |
 | [Helium](https://helium.computer)                                                                                      | Minimal browser                        | 🆓    |     |         |                                      |
 | [uBlock Origin](https://github.com/gorhill/uBlock)                                                                     | Ad & script blocker                    | 🆓    | ✅  |         | ⭐ Browser extension                 |
-| [Privacy Badger](https://chromewebstore.google.com/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)             | Auto-learn tracker blocker             | 🆓    | ✅  | ✅      | Browser extension                    |
+| [Privacy Badger](https://privacybadger.org/)                                                                           | Auto-learn tracker blocker             | 🆓    | ✅  | ✅      | Browser extension                    |
 | [Auto Tab Discard](https://chromewebstore.google.com/detail/auto-tab-discard-suspend/jhnleheckmknfcgijgkadoemagpecfol) | Suspend inactive tabs to save memory   | 🆓    | ✅  |         | Browser extension                    |
 | [Enhancer for YouTube](https://chromewebstore.google.com/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle) | Extra controls & features for YouTube  | 🆓    |     |         | Browser extension                    |
 
