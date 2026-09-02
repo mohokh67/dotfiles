@@ -110,8 +110,6 @@ cask "appcleaner"
 cask "blip"
 # Web browser focusing on privacy
 cask "brave-browser"
-# Native GUI for Homebrew casks
-cask "caskhub"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
 # Anthropic's official Claude AI desktop app
@@ -122,6 +120,8 @@ cask "claude-code@latest"
 cask "cryptomator"
 # Disk space visualiser
 cask "daisydisk"
+# Window peeking utility app
+cask "dockdoor"
 # Utility to support moving and resizing using a modifier key and mouse drag
 cask "easy-move+resize"
 # Desktop client for Ente Auth
@@ -144,10 +144,10 @@ cask "macos-fuse-t/cask/fuse-t", trusted: true
 cask "ghostty"
 # Web browser
 cask "google-chrome"
+# Desktop automation application
+cask "hammerspoon"
 # Open-source video transcoder
 cask "handbrake-app"
-# Speech to text application
-cask "handy"
 # Chromium-based web browser
 cask "helium-browser"
 # Utility to hide menu bar items
@@ -184,10 +184,14 @@ cask "proton-pass"
 cask "protonvpn"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Onion routing based messenger
+cask "session"
 # Screenshot measurement and annotation tool
 cask "shottr"
 # Music streaming service
 cask "spotify"
+# Free, open-source, and completely encrypted notes app
+cask "standard-notes"
 # System monitor for the menu bar
 cask "stats"
 # Real time file synchronisation software
@@ -200,6 +204,8 @@ cask "telegram"
 cask "tor-browser"
 # Disk encryption software focusing on security based on TrueCrypt
 cask "veracrypt"
+# Multimedia player
+cask "vlc"
 # Real-time voice changer and soundboard
 cask "voicemod"
 # GPU-accelerated cross-platform terminal emulator and multiplexer

@@ -71,7 +71,7 @@ Note: `~/.claude/settings.local.json` is machine-specific — gitignored, never 
 
 ### Issue tracker
 
-Issues and specs live as markdown files under `.scratch/<feature-slug>/` in this repo. See `docs/agents/issue-tracker.md`.
+Issues and specs live as GitHub issues in this repo (`mohokh67/dotfiles`), via the `gh` CLI. See `docs/agents/issue-tracker.md`.
 
 ### Triage labels
 

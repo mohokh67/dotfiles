@@ -114,6 +114,7 @@ Cross-platform tools.
 | Tool                                                                                      | Description                                        | Price | OSS | Privacy | Notes                               |
 | ----------------------------------------------------------------------------------------- | -------------------------------------------------- | ----- | --- | ------- | ----------------------------------- |
 | [Raycast](https://www.raycast.com/)                                                       | Powerful Spotlight replacement                     | 🆓💲  |     |         | ⭐                                  |
+| [Vorssaint](https://github.com/vorssaintapp/vorssaint-utils/)                             | menu bar toolkit                                   | 🆓    |     |         | ⭐                                  |
 | [Maccy](https://maccy.app/)                                                               | Lightweight clipboard manager                      | 🆓    | ✅  |         | ⭐ Install via brew                 |
 | [Rectangle](https://rectangleapp.com/)                                                    | Keyboard-driven window manager                     | 🆓    | ✅  |         | Can be done with Raycast            |
 | [Kap](https://getkap.co/)                                                                 | Open-source screen recorder                        | 🆓    | ✅  |         | ⭐                                  |
