@@ -18,7 +18,8 @@
       "Bash(stow:*)",
       "mcp__plugin_claude-mem_mcp-search__search"
     ],
-    "defaultMode": "auto"
+    "defaultMode": "auto",
+    "blockReadsOutsideWorkingDirectories": true
   },
   "hooks": {
     "PreToolUse": [
@@ -84,5 +85,6 @@
       "**Org-specific CLIs**: None configured",
       "routine under mohokh67/ prefix: other repos owned by mohokh67 (folio, quickmd, minimal-card, zero, portly, devops_k8s) appear as sibling checkouts under ~/dev but were not vetted (sibling-docs/org-split gathering was skipped for this project-scoped run) — not adopted as trusted context"
     ]
-  }
+  },
+  "model": "opus"
 }

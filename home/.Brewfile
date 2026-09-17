@@ -4,6 +4,7 @@ tap "gromgit/brewtils"
 tap "hashicorp/tap"
 tap "iina/mpv-iina"
 tap "jandedobbeleer/oh-my-posh"
+tap "macos-fuse-t/cask"
 tap "modem-dev/tap"
 tap "mohokh67/portly"
 tap "nikitabobko/tap"
@@ -29,6 +30,8 @@ brew "cloc"
 brew "cocoapods"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# Select default apps for documents and URL schemes on macOS
+brew "duti"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Modern, maintained replacement for ls
@@ -89,6 +92,8 @@ brew "stow"
 brew "thefuck"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Internet file retriever
+brew "wget"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
 # Feature-rich command-line audio/video downloader
@@ -99,6 +104,8 @@ brew "zoxide"
 brew "anomalyco/tap/opencode", trusted: true
 # Desktop-inspired terminal diff viewer for agent-authored changesets
 brew "modem-dev/tap/hunk", trusted: true
+# CLI for managing ports — list, inspect, and kill by port number
+brew "mohokh67/portly/portly", trusted: true
 # Image editing and design software
 cask "affinity"
 # Android SDK component
@@ -109,6 +116,8 @@ cask "appcleaner"
 cask "blip"
 # Web browser focusing on privacy
 cask "brave-browser"
+# Native GUI for Homebrew casks
+cask "caskhub"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
 # Anthropic's official Claude AI desktop app
@@ -119,8 +128,6 @@ cask "claude-code@latest"
 cask "cryptomator"
 # Disk space visualiser
 cask "daisydisk"
-# Window peeking utility app
-cask "dockdoor"
 # Utility to support moving and resizing using a modifier key and mouse drag
 cask "easy-move+resize"
 # Desktop client for Ente Auth
@@ -129,33 +136,34 @@ cask "ente-auth"
 cask "excalidrawz"
 # Desktop client for Filen.io
 cask "filen"
-# Markdown previews in Finder QuickLook with diagrams and math
-cask "xykong/tap/flux-markdown"
+# Offline voice-to-text dictation app with AI enhancement
+cask "fluidvoice"
+cask "flux-markdown"
 cask "font-fira-code"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-monaspace"
 cask "font-symbols-only-nerd-font"
 cask "font-victor-mono"
+# LibFUSE implementation that doesn't use kernel extensions
+cask "macos-fuse-t/cask/fuse-t", trusted: true
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
 cask "google-chrome"
-# Desktop automation application
-cask "hammerspoon"
 # Open-source video transcoder
 cask "handbrake-app"
+# Speech to text application
+cask "handy"
 # Chromium-based web browser
 cask "helium-browser"
 # Free and open-source media player
 cask "iina"
-# Tool to prevent the system from going into sleep mode
-cask "keepingyouawake"
 # File archiver
 cask "keka"
 # Break time reminder app
 cask "lookaway"
-# Clipboard manager
-cask "maccy"
+# Window manager
+cask "loop"
 # File system integration
 cask "macfuse"
 # Speech recognition tool
@@ -180,14 +188,10 @@ cask "proton-pass"
 cask "protonvpn"
 # Control your tools with a few keystrokes
 cask "raycast"
-# Onion routing based messenger
-cask "session"
 # Screenshot measurement and annotation tool
 cask "shottr"
 # Music streaming service
 cask "spotify"
-# Free, open-source, and completely encrypted notes app
-cask "standard-notes"
 # System monitor for the menu bar
 cask "stats"
 # Real time file synchronisation software
@@ -200,10 +204,10 @@ cask "telegram"
 cask "tor-browser"
 # Disk encryption software focusing on security based on TrueCrypt
 cask "veracrypt"
-# Multimedia player
-cask "vlc"
 # Real-time voice changer and soundboard
 cask "voicemod"
+# Menu bar toolkit with keep-awake, system monitor and volume mixer
+cask "vorssaint"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 # Network protocol analyzer

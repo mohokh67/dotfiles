@@ -81,6 +81,7 @@ alias cat='bat'
 alias screensaver="cbonsai -S"
 
 # alias ls='ls --color=auto'
+# add --total-size to the command to show the size but it's going to be slow
 alias ls="eza --long --git --icons --group-directories-first"
 alias ll="eza -la --git --icons --group-directories-first"
 alias lst="eza -l -T --git --icons --group-directories-first"
@@ -324,3 +325,5 @@ eval "$(zoxide init --cmd cd zsh)"
  # Machine-specific overrides (not stowed, not in git)
  #THIS MUST BE AT THE END OF THE FILE!!!
  [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
+
+export REPORTTIME=3
