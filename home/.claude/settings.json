@@ -21,6 +21,7 @@
     "defaultMode": "auto",
     "blockReadsOutsideWorkingDirectories": true
   },
+  "model": "opus",
   "hooks": {
     "PreToolUse": [
       {
@@ -29,6 +30,17 @@
           {
             "type": "command",
             "command": "~/.claude/hooks/block-dangerous-git.sh"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/caveman-mode.sh"
           }
         ]
       }
@@ -48,7 +60,8 @@
     "feature-dev@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
     "hookify@claude-plugins-official": false,
-    "typescript-lsp@claude-plugins-official": false
+    "typescript-lsp@claude-plugins-official": false,
+    "mattpocock-skills@claude-plugins-official": true
   },
   "effortLevel": "high",
   "skipDangerousModePermissionPrompt": true,
@@ -85,6 +98,5 @@
       "**Org-specific CLIs**: None configured",
       "routine under mohokh67/ prefix: other repos owned by mohokh67 (folio, quickmd, minimal-card, zero, portly, devops_k8s) appear as sibling checkouts under ~/dev but were not vetted (sibling-docs/org-split gathering was skipped for this project-scoped run) — not adopted as trusted context"
     ]
-  },
-  "model": "opus"
+  }
 }

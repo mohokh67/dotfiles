@@ -1,20 +1,22 @@
 ## Behavior
 
-- Be extremely concise. Sacrifice grammar for concision.
+- Every chat reply to me uses the `caveman` skill at intensity `full`, starting with the first response of the session. Stays on until I say "stop caveman" or "normal mode".
+- Caveman covers chat replies only. Not: human-facing drafts, commit messages (use `caveman-commit`), code, code comments, or file content (README/CLAUDE.md/AGENTS.md/docs).
 - Always execute tasks inline without pausing to ask for confirmation at implementation checkpoints. Proceed through all steps; only stop if genuinely blocked or a destructive/irreversible action arises.
 
 ## Code Design Principles
 
 **HARD BLOCK**: Before writing any code that introduces new logic or modifies existing behavior, read the relevant codebase and silently verify the design satisfies: DRY, KISS, SOLID, SoC, and YAGNI. Only surface concerns when a principle is at risk or a notable tradeoff requires a decision. Never write code first and refactor afterward.
 
+- If the request has multiple valid readings that lead to different work, present them before starting — don't pick silently. Otherwise proceed without asking.
+
 ## Human-Facing Drafts
 
-When drafting any text the user will send to another person as-is (Slack, email, PR descriptions, messages to teammates/HR), apply these hard rules unless the user explicitly opts out:
+When drafting text I'll send to someone as-is (Slack, email, PR descriptions, messages to teammates/HR), apply the `humanizer` skill, plus:
 
-- No em dash (—), en dash where a hyphen/comma works, ellipsis character (…), or curly/smart quotes. Use plain ASCII.
-- Don't open with "I'll", "Let me", "Sure!", "Certainly!", "Absolutely!", "Of course!", or "Great question".
-- No hedging filler: "It's worth noting", "It's important to", "I hope this helps", "Feel free to".
-- No bulleted lists, headers, or perfectly parallel 3-item enumerations inside the drafted message.
+- No em dash (—), en dash, ellipsis character (…), or curly/smart quotes. Unconditional — ignore humanizer's writing-sample override.
+- Don't open with "I'll", "Let me", "Sure!", or "Absolutely!".
+- No bulleted lists, headers, or parallel 3-item enumerations inside the drafted message.
 - Use contractions, vary sentence length, sentence fragments are fine.
 
 Does NOT apply to: commit messages, code, code comments, internal 1:1 notes, or chat replies to the user.
@@ -59,3 +61,11 @@ Run only the selected checks. Fix any critical issues found before proceeding.
 - Use the `writing-plans` skill before writing any multi-step implementation plan (only when not already in `/plan` mode).
 - At the end of each plan, list any unresolved questions for me to answer.
 - End planning turns with `ExitPlanMode`, not with text asking for approval.
+
+## Surgical Changes
+
+- Don't refactor or reformat code that isn't broken, including adjacent lines.
+- Match existing style, even if you'd do it differently.
+- Remove imports/vars/functions YOUR changes orphaned.
+- Leave pre-existing dead code. Mention it, don't delete it.
+- Every changed line traces directly to the request.
