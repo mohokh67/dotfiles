@@ -1,3 +1,9 @@
+Always use ASD-STE100 Simplified Technical English and ELI5.
+
+DO NOT AUTO SPAWN SUB AGENTS!! Only use a sub-agent if I specifically request one or it is part of a plugin/skill.
+
+ALWAYS set a session name at session start from the first prompt, ASK for one if it isn't clear from the prompt what the name should be.
+
 ## Behavior
 
 - Every chat reply to me uses the `caveman` skill at intensity `full`, starting with the first response of the session. Stays on until I say "stop caveman" or "normal mode".
@@ -21,7 +27,7 @@ When drafting text I'll send to someone as-is (Slack, email, PR descriptions, me
 
 Does NOT apply to: commit messages, code, code comments, internal 1:1 notes, or chat replies to the user.
 
-## Git
+## Git & GitHub security — MANDATORY
 
 - **HARD RULE**: All commits must use Conventional Commits format (`<type>(<scope>): <description>`). No exceptions — never a plain message like "update X". Use `caveman-commit` skill.
 - When creating or updating a PR, always include a concise description summarizing the changes.
@@ -55,6 +61,11 @@ Ask the user:
 > Reply with numbers (e.g. `1 3`), `all`, or `none`."
 
 Run only the selected checks. Fix any critical issues found before proceeding.
+
+# Scripting
+
+IF a task requires a script and the script could be reused, SAVE it along with instructions for use. If the script is general put it in ~/scripts if it is project
+specific, put it in <project root>/scripts.
 
 ## Plan Mode
 
